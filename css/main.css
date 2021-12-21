@@ -1,0 +1,135 @@
+/*----------------------- General Styles --------------------------*/
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    color: #292929;
+    background: white;
+    padding: 0;
+    margin: 0;
+  }
+
+header,
+footer,
+.background-green {
+    background-color: rgba(107,122,64, .47 );
+
+}
+
+/***** Header *****/
+
+
+h1 {
+    color: #254E6B;
+    font-size: 45px;
+    font-family: 'Sigmar One', cursive;
+    margin-left: 40px;
+}
+
+
+nav ul li {
+    display: inline-block;
+  }
+      
+ nav ul li a {
+        color: #6B7A40;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-left: 30px;
+}
+
+a:hover {
+        color: #8F2D56;
+      }
+
+h2 {
+        font-family: 'Sigmar One', cursive;
+        font-size: 72px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px rgb(56, 56, 56);
+        text-align: center;
+
+      }
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#8F2D56;
+    text-shadow: 1px 1px rgb(56, 56, 56);
+    text-align: center;
+}
+
+/*----- About Home Page -------*/
+
+h4 {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 40px;
+    color: #254E6B;
+    text-transform: uppercase;
+}
+    
+p {
+    margin: 0 100px;
+}
+
+button {
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    background-color: #6B7A40;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    
+}
+
+/*----- Skill & Tools Home Page -------*/
+
+/*----- Projects Home Page -------*/
+
+.projects  {
+    background-color: rgba(115, 115, 115, .47);
+}
+
+.projects h4 {
+    color: #292929;
+}
+
+/*----- Footer-------*/
+footer p {
+    text-align: center;
+  }
+footer a {
+    text-decoration: none;
+    color: #8F2D56;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+.footer-nav {
+    text-align: center;
+}
+  
+
+/*----------------------- About Me Page Styles --------------------------*/
+
+/*----------------------- Projects Page Styles --------------------------*/
+
+/*----------------------- Contect Page Styles --------------------------*/
+
+.contact {
+    background-color: rgba(115, 115, 115, .47);
+
+}
+
+/*----------------------- Mobile Styles --------------------------*/
+/*----------------------- Desktop Styles --------------------------*/
