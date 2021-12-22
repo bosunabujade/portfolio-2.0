@@ -1,6 +1,5 @@
 /*----------------------- General Styles --------------------------*/
 
-
 body {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 20px;
@@ -17,107 +16,17 @@ footer,
 
 }
 
-/***** Header *****/
 
-
-h1 {
-    color: #254E6B;
-    font-size: 45px;
-    font-family: 'Sigmar One', cursive;
-    margin-left: 40px;
-}
-
-
-nav ul li {
-    display: inline-block;
-  }
-      
- nav ul li a {
-        color: #6B7A40;
-        font-size: 18px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding-left: 30px;
-}
-
-a:hover {
-        color: #8F2D56;
-      }
-
-h2 {
-        font-family: 'Sigmar One', cursive;
-        font-size: 72px;
-        font-weight: bold;
-        color: white;
-        text-shadow: 2px 2px rgb(56, 56, 56);
-        text-align: center;
-
-      }
-h3 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color:#8F2D56;
-    text-shadow: 1px 1px rgb(56, 56, 56);
-    text-align: center;
-}
 
 /*----- About Home Page -------*/
-
-h4 {
-    text-align: center;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 40px;
-    color: #254E6B;
-    text-transform: uppercase;
-}
-    
-p {
-    margin: 0 100px;
-}
-
-button {
-    color: white;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 15px;
-    background-color: #6B7A40;
-    padding: 10px;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    
-}
 
 /*----- Skill & Tools Home Page -------*/
 
 /*----- Projects Home Page -------*/
 
-.projects  {
-    background-color: rgba(115, 115, 115, .47);
-}
 
-.projects h4 {
-    color: #292929;
-}
 
 /*----- Footer-------*/
-footer p {
-    text-align: center;
-  }
-footer a {
-    text-decoration: none;
-    color: #8F2D56;
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding-left: 30px;
-}
-.footer-nav {
-    text-align: center;
-}
   
 
 /*----------------------- About Me Page Styles --------------------------*/
@@ -126,10 +35,215 @@ footer a {
 
 /*----------------------- Contect Page Styles --------------------------*/
 
-.contact {
-    background-color: rgba(115, 115, 115, .47);
-
-}
 
 /*----------------------- Mobile Styles --------------------------*/
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+/***** Header *****/
+.landing {
+    width: 100%;
+    height: 300px;
+}
+
+h1 {
+    color: #254E6B;
+    font-size: 25px;
+    font-family: 'Sigmar One', cursive;
+    margin-left: 10px;
+}
+
+
+nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    color: #6B7A40;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 10px;
+}
+      
+
+h2 {
+        font-family: 'Sigmar One', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px rgb(56, 56, 56);
+        text-align: center;
+        line-height: 35px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#8F2D56;
+    text-shadow: 1px 1px rgb(56, 56, 56);
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+.tagline {
+    padding-top: 25px;
+}
+
+
+/*----- About Home Page -------*/
+header {
+    width: 100%;
+}
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.skills {
+    width: 100%;
+}
+h4 {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    color: #254E6B;
+    text-transform: uppercase;
+    padding-top: 0;
+}
+    
+.profile-pic {
+    display: none;
+}
+p {
+    font-size: 15px;
+}
+
+/*----- Projects Home Page -------*/
+
+.projects {
+    width: 100%;
+    background-color: rgba(115, 115, 115, .47);
+}
+
+.projects h4 {
+    color: #292929;
+}
+/*----- Footer-------*/
+footer {
+    width: 100%;
+
+}
+footer p {
+    text-align: center;
+  }
+footer a {
+    text-decoration: none;
+    color: #8F2D56;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 10px;
+}
+.footer-nav {
+    text-align: center;
+}
+.copyright {
+    font-size: 10px;
+}
+
+/*----------------------- About Me Page Styles --------------------------*/
+img {
+    width: 50%;
+    align-items: center;
+}
+
+/*----------------------- Projects Page Styles --------------------------*/
+
+/*----------------------- Contect Page Styles --------------------------*/
+.contact {
+    background-color: rgba(115, 115, 115, .47);
+    width: 100%;
+}
+
+
+
+
 /*----------------------- Desktop Styles --------------------------*/
+@media only screen and (min-width:1440px) {
+
+    main {
+        width: 1600px;
+    }
+    
+
+/*-----Desktop Header-------*/
+
+    h1 {
+        color: #254E6B;
+        font-size: 45px;
+        font-family: 'Sigmar One', cursive;
+        margin-left: 40px;
+    }
+    
+    
+    nav ul li {
+        display: inline-block;
+      }
+          
+     nav ul li a {
+            color: #6B7A40;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-left: 30px;
+    }
+    
+    a:hover {
+            color: #8F2D56;
+          }
+    
+    h2 {
+            font-family: 'Sigmar One', cursive;
+            font-size: 72px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px rgb(56, 56, 56);
+            text-align: center;
+    
+          }
+    h3 {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:#8F2D56;
+        text-shadow: 1px 1px rgb(56, 56, 56);
+        text-align: center;
+    }
+    button {
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 15px;
+        background-color: #6B7A40;
+        padding: 10px;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        
+    }
+
+}
