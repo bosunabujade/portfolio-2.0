@@ -16,26 +16,6 @@ footer,
 
 }
 
-
-
-/*----- About Home Page -------*/
-
-/*----- Skill & Tools Home Page -------*/
-
-/*----- Projects Home Page -------*/
-
-
-
-/*----- Footer-------*/
-  
-
-/*----------------------- About Me Page Styles --------------------------*/
-
-/*----------------------- Projects Page Styles --------------------------*/
-
-/*----------------------- Contect Page Styles --------------------------*/
-
-
 /*----------------------- Mobile Styles --------------------------*/
 main {
     display: flex;
@@ -45,6 +25,26 @@ main {
     justify-content: center;
     margin: 0 auto;
 
+}
+p {
+    margin: 15px 20px;
+    font-size: 12px;
+}
+
+button {
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 10px;
+    background-color: #6B7A40;
+    padding: 7px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;   
+}
+
+h5 {
+    margin: 15px 20px;
 }
 /***** Header *****/
 .landing {
@@ -58,13 +58,11 @@ h1 {
     font-family: 'Sigmar One', cursive;
     margin-left: 10px;
 }
-
-
 nav ul li {
     display: inline-block;
   }
 
-  nav ul li a {
+nav ul li a {
     color: #6B7A40;
     font-size: 12px;
     text-decoration: none;
@@ -109,6 +107,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    margin: 0 auto;
 }
 .skills {
     width: 100%;
@@ -125,15 +124,13 @@ h4 {
 .profile-pic {
     display: none;
 }
-p {
-    font-size: 15px;
-}
 
 /*----- Projects Home Page -------*/
 
 .projects {
     width: 100%;
     background-color: rgba(115, 115, 115, .47);
+    padding: 20px;
 }
 
 .projects h4 {
@@ -164,9 +161,21 @@ footer a {
 }
 
 /*----------------------- About Me Page Styles --------------------------*/
-img {
+.bio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.bio h4 {
+    width: 100%;
+}
+.bio-pic {
     width: 50%;
-    align-items: center;
+
+}
+.bio p {
+    width: 100%;
+    
 }
 
 /*----------------------- Projects Page Styles --------------------------*/
@@ -180,70 +189,145 @@ img {
 
 
 
+
+/*----------------------- Tablet Styles --------------------------*/
+@media only screen and (min-width:768px) {
+
+    main {
+        width: 640px;
+    }
+/*-----Tablet Header-------*/
+    h1{
+        font-size: 30px;
+        padding: 10px;
+        width: 45%;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .landing {
+        height: 350px;
+    }
+
+    .tagline {
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 45px;
+    }
+    nav {
+        width: 50%;
+    }
+    nav ul li {
+        display: inline-block;
+      }
+    nav ul li a {
+        color: #6B7A40;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+}
+    a:hover {
+        color: #8F2D56;
+      }
+
+      h2 {
+          font-size: 35px;
+      }
+
+      h3 {
+        font-size: 20px;
+    }
+    /*----- About Home Page (Tablet) -------*/
+    .about {
+        justify-content: center;
+    }
+    h4 {
+    font-size: 25px;
+    width: 100%;
+    margin: 20px;
+    }
+    
+    .profile-pic {
+    display: inline-block;
+    width: 45%;
+    }
+    .about p {
+        width: 45%;
+        margin: 20;
+    }
+    .resume-button {
+        margin: 10px;
+    }
+
+}
+
 /*----------------------- Desktop Styles --------------------------*/
 @media only screen and (min-width:1440px) {
 
     main {
-        width: 1600px;
+        width: 1440px;
     }
     
 
 /*-----Desktop Header-------*/
 
     h1 {
-        color: #254E6B;
         font-size: 45px;
-        font-family: 'Sigmar One', cursive;
-        margin-left: 40px;
+        width: 45%;
+        padding: 0;
+
     }
     
-    
-    nav ul li {
-        display: inline-block;
-      }
-          
-     nav ul li a {
-            color: #6B7A40;
-            font-size: 18px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 700;
-            padding-left: 30px;
-    }
-    
-    a:hover {
-            color: #8F2D56;
-          }
     
     h2 {
-            font-family: 'Sigmar One', cursive;
-            font-size: 72px;
-            font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px rgb(56, 56, 56);
-            text-align: center;
-    
+        font-size: 72px;
+        line-height: 73px;
           }
     h3 {
-        font-family: 'Red Hat Display', sans-serif;
         font-size: 32px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color:#8F2D56;
-        text-shadow: 1px 1px rgb(56, 56, 56);
-        text-align: center;
+
     }
     button {
-        color: white;
-        font-family: 'Red Hat Display', sans-serif;
         font-size: 15px;
-        background-color: #6B7A40;
         padding: 10px;
-        border: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 1.5px;
         
+    }
+    .landing {
+        height: 640px;
+    }
+    nav ul li a {
+        font-size: 18px;
+        
+    }
+    nav {
+        width: 50%;
+        height: 65px;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    h4 {
+    font-size: 35px;
+    }
+    
+    .profile-pic {
+    display: inline-block;
+    width: 35%;
+    }
+    .about p {
+        width: 55%;
+        margin: 20;
+        font-size: 20px;
+    }
+    .resume-button {
+        margin: 10px;
     }
 
 }
