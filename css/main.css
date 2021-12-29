@@ -1,4 +1,5 @@
 /*----------------------- General Styles --------------------------*/
+/* fix all headers on html and css */
 
 body {
     font-family: 'Red Hat Display', sans-serif;
@@ -20,12 +21,12 @@ footer,
 main {
     display: flex;
     flex-flow: row wrap;
-    width: 350px;
+    min-width: 320px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-
 }
+
 p {
     margin: 15px 20px;
     font-size: 12px;
@@ -34,58 +35,64 @@ p {
 button {
     color: white;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 10px;
     background-color: #6B7A40;
-    padding: 7px;
     border: none;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 12px;
+    padding: 7px;
     letter-spacing: 1.5px;   
 }
-
 h5 {
     margin: 15px 20px;
 }
+
 /***** Header *****/
 .landing {
     width: 100%;
-    height: 300px;
+    min-height: 350px;
 }
 
-h1 {
-    color: #254E6B;
-    font-size: 25px;
-    font-family: 'Sigmar One', cursive;
-    margin-left: 10px;
-}
 nav ul li {
-    display: inline-block;
-  }
+    display: inline;
+}
 
 nav ul li a {
+    font-size: 15px;
+    padding-left: 10px;
     color: #6B7A40;
-    font-size: 12px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    padding-left: 10px;
 }
-      
+
+a:hover {
+    color: #8F2D56;
+  }
+
+h1{
+    font-size: 35px;
+    color: #254E6B;
+    font-family: 'Sigmar One', cursive;
+    margin-left: 10px;
+    margin-top: 0;
+}
 
 h2 {
-        font-family: 'Sigmar One', cursive;
-        font-size: 20px;
-        font-weight: bold;
-        color: white;
-        text-shadow: 2px 2px rgb(56, 56, 56);
-        text-align: center;
-        line-height: 35px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-      }
-h3 {
+    font-size: 35px;
+    font-family: 'Sigmar One', cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px rgb(56, 56, 56);
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 35px;
+}
+
+  h3 {
+    font-size: 20px;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     color:#8F2D56;
@@ -98,7 +105,6 @@ h3 {
     padding-top: 25px;
 }
 
-
 /*----- About Home Page -------*/
 header {
     width: 100%;
@@ -108,33 +114,49 @@ header {
     flex-flow: row wrap;
     width: 100%;
     margin: 0 auto;
+    justify-content: center;
+
 }
 .skills {
     width: 100%;
 }
+
 h4 {
-    text-align: center;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 20px;
-    color: #254E6B;
-    text-transform: uppercase;
-    padding-top: 0;
+font-size: 25px;
+text-align: center;
+font-family: 'Red Hat Display', sans-serif;
+color: #254E6B;
+text-transform: uppercase;
+width: 100%;
 }
-    
+
 .profile-pic {
-    display: none;
+display: inline-block;
+width: 45%;
 }
+.about p {
+    width: 45%;
+    margin: 20px;
+}
+.resume-button {
+    margin: 10px;
+    width: 20%;
+    margin-left: 390px;
+
+}
+
 
 /*----- Projects Home Page -------*/
 
 .projects {
     width: 100%;
     background-color: rgba(115, 115, 115, .47);
-    padding: 20px;
+    padding: 10px;
 }
 
 .projects h4 {
     color: #292929;
+    margin-top: 10px;
 }
 /*----- Footer-------*/
 footer {
@@ -148,7 +170,7 @@ footer a {
     text-decoration: none;
     color: #8F2D56;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     padding-left: 10px;
@@ -157,7 +179,7 @@ footer a {
     text-align: center;
 }
 .copyright {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /*----------------------- About Me Page Styles --------------------------*/
@@ -166,6 +188,7 @@ footer a {
     flex-flow: row wrap;
     justify-content: center;
 }
+
 .bio h4 {
     width: 100%;
 }
@@ -175,11 +198,21 @@ footer a {
 }
 .bio p {
     width: 100%;
+    font-size: 16px;
     
 }
 
 /*----------------------- Projects Page Styles --------------------------*/
 
+.project-page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project-page h4 {
+    width: 100%;
+}
 /*----------------------- Contect Page Styles --------------------------*/
 .contact {
     background-color: rgba(115, 115, 115, .47);
@@ -190,116 +223,29 @@ footer a {
 
 
 
-/*----------------------- Tablet Styles --------------------------*/
-@media only screen and (min-width:768px) {
-
-    main {
-        width: 640px;
-    }
-/*-----Tablet Header-------*/
-    h1{
-        font-size: 30px;
-        padding: 10px;
-        width: 45%;
-        margin: 0;
-    }
-    header {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .landing {
-        height: 350px;
-    }
-
-    .tagline {
-        width: 100%;
-        padding-top: 0;
-        margin-bottom: 45px;
-    }
-    nav {
-        width: 50%;
-    }
-    nav ul li {
-        display: inline-block;
-      }
-    nav ul li a {
-        color: #6B7A40;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-}
-    a:hover {
-        color: #8F2D56;
-      }
-
-      h2 {
-          font-size: 35px;
-      }
-
-      h3 {
-        font-size: 20px;
-    }
-    /*----- About Home Page (Tablet) -------*/
-    .about {
-        justify-content: center;
-    }
-    h4 {
-    font-size: 25px;
-    width: 100%;
-    margin: 20px;
-    }
-    
-    .profile-pic {
-    display: inline-block;
-    width: 45%;
-    }
-    .about p {
-        width: 45%;
-        margin: 20;
-    }
-    .resume-button {
-        margin: 10px;
-    }
-
-}
-
 /*----------------------- Desktop Styles --------------------------*/
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width:1024px) {
 
     main {
-        width: 1440px;
+        min-width: 1024px;
     }
     
 
 /*-----Desktop Header-------*/
-
-    h1 {
-        font-size: 45px;
-        width: 45%;
-        padding: 0;
-
-    }
-    
-    
-    h2 {
-        font-size: 72px;
-        line-height: 73px;
-          }
-    h3 {
-        font-size: 32px;
-
-    }
-    button {
-        font-size: 15px;
-        padding: 10px;
-        
-    }
     .landing {
         height: 640px;
     }
-    nav ul li a {
-        font-size: 18px;
-        
+    header {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 50px;
+        width: 45%;
+        padding-left: 0;
+        margin-left: 20px;
     }
     nav {
         width: 50%;
@@ -307,14 +253,36 @@ footer a {
         display: flex;
         justify-content: space-around;
     }
+
     nav ul {
         display: flex;
         width: 100%;
         justify-content: space-around;
     }
+    nav ul li a {
+        font-size: 18px;
+    }
+    .tagline {
+        width: 100%;
+        padding-top: 0;
+    }
+    
+    h2 {
+        font-size: 85px;
+        line-height: 73px;
+        margin-top: 0;
+    }
+    h3 {
+        font-size: 40px;
+
+    }
+    button {
+        font-size: 18px;
+    }
+    
 
     h4 {
-    font-size: 35px;
+    font-size: 45px;
     }
     
     .profile-pic {
@@ -322,12 +290,30 @@ footer a {
     width: 35%;
     }
     .about p {
-        width: 55%;
-        margin: 20;
+        width: 50%;
+        margin: 20px;
         font-size: 20px;
+        padding: 0 30px 0 30px;
     }
     .resume-button {
         margin: 10px;
     }
+    footer {
+        padding: 20px;
+    }
 
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 0 auto;
+    }
+    footer a {
+        font-size: 16px;
+        justify-content: space-between;    }
+    .copyright {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
 }
