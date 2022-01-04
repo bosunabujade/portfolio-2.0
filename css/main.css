@@ -1,5 +1,7 @@
 /*----------------------- General Styles --------------------------*/
 /* fix all headers on html and css */
+/* add h1 to the nav section*/
+/* make h3 span */
 
 body {
     font-family: 'Red Hat Display', sans-serif;
@@ -27,6 +29,7 @@ main {
     margin: 0 auto;
 }
 
+
 p {
     margin: 15px 20px;
     font-size: 12px;
@@ -52,9 +55,33 @@ h5 {
     width: 100%;
     min-height: 350px;
 }
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.hamburger {
+    background-color: transparent;
+    color: #292929 ;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor:pointer;
+    width: 20%;
+}
+
+.nav-ul {
+    display: none;
+    width: 100%;
+}
+
+.nav-ul.show {
+    display:flex;
+}
 
 nav ul li {
-    display: inline;
+    display:inline;
 }
 
 nav ul li a {
@@ -76,6 +103,7 @@ h1{
     font-family: 'Sigmar One', cursive;
     margin-left: 10px;
     margin-top: 0;
+    width: 75%;
 }
 
 h2 {
@@ -103,12 +131,10 @@ h2 {
 }
 .tagline {
     padding-top: 25px;
+    width: 100%;
 }
 
 /*----- About Home Page -------*/
-header {
-    width: 100%;
-}
 .about {
     display: flex;
     flex-flow: row wrap;
@@ -117,7 +143,7 @@ header {
     justify-content: center;
 
 }
-.skills {
+.skills-section-hp {
     width: 100%;
 }
 
@@ -144,6 +170,25 @@ width: 45%;
     margin-left: 390px;
 
 }
+span {
+    color: #8F2D56;
+    padding-left: 150px ;}
+
+.skills-section-hp ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+.skills {
+    display: block;
+    width: 40%;
+    font-size: 14px;
+    color: #8F2D56;
+    line-height: 20px;
+    font-weight: 700;
+}
+
 
 
 /*----- Projects Home Page -------*/
@@ -247,6 +292,10 @@ footer a {
         padding-left: 0;
         margin-left: 20px;
     }
+
+    .hamburger {
+        display: none;
+    }
     nav {
         width: 50%;
         height: 65px;
@@ -254,7 +303,7 @@ footer a {
         justify-content: space-around;
     }
 
-    nav ul {
+    .nav-ul {
         display: flex;
         width: 100%;
         justify-content: space-around;
@@ -298,6 +347,20 @@ footer a {
     .resume-button {
         margin: 10px;
     }
+
+    .skills-section-hp ul{
+     justify-content: space-evenly;
+     padding: 20px;
+    
+    }
+
+    .skills {
+        width: 30%;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    
     footer {
         padding: 20px;
     }
