@@ -17,12 +17,15 @@
   <body>
     <main>
         <header class="landing">
-            <h1>Bosun Abujade</h1>
-            <nav>
+            <nav id="myNav" class="overlay">
+                <h1>Bosun Abujade</h1>
                 <button class="hamburger" id="hamburger">
                     <i class="fa fa-bars"></i>
                 </button>
-                <ul class="nav-ul" id="nav-ul">
+                <button class="closebtn">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="nav-ul overlay-content" id="nav-ul">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About Me</a></li>
                     <li><a href="./projects.html">Projects</a></li>
@@ -30,7 +33,7 @@
                 </ul>
             </nav>
             <div class="tagline">
-                <h2>Olatunbosun Abujade</h2>
+                <h2 class="name-change"></h2>
                 <h3>Front End Developer</h3>
             </div>
         </header>
@@ -72,12 +75,37 @@
 
         <section class="projects">
             <h4>Projects</h4>
-            <div>
-                <img/>
-                <h5>Name Of Project</h5>
-                <p>Brief description of Project</p>
-                <button>View Live Site</button>
-                <button>More Info</button>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="project-img" src="./img/bosun.jpg">
+                    <h5>Name Of Project</h5>
+                    <p class="text">Caption Text</p>
+                    <button>View Live Site</button>
+                    <button>More Info</button>
+                </div>
+                <div class="mySlides fade">
+                    <img class="project-img" src="./img/bosun.jpg">
+                    <h5>Name Of Project</h5>
+                    <p class="text">Caption Text</p>
+                    <button>View Live Site</button>
+                    <button>More Info</button>
+                </div>
+                <div class="mySlides fade">
+                    <img class="project-img" src="./img/bosun.jpg">
+                    <h5>Name Of Project</h5>
+                    <p class="text">Caption Text</p>
+                    <button>View Live Site</button>
+                    <button>More Info</button>
+                </div>
+                <!-- Next and previous buttons -->
+                <button class="prev">
+                    <i class="fa fa-angle-left"></i>
+                </button>
+                <button class="next">
+                    <i class="fa fa-angle-right"></i>
+                </button>
             </div>
         </section>
 
