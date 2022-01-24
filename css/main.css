@@ -15,7 +15,7 @@ body {
 header,
 footer,
 .background-green {
-    background-color: rgba(107,122,64, .47 );
+    background-color: rgba(149, 183, 211, 0.47);
 
 }
 
@@ -466,5 +466,23 @@ footer a {
         font-size: 14px;
         padding-top: 10px;
         padding-bottom: 0;
+    }
+    .sidenav {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: inline-block;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding-left: 10px;
+        
     }
 }
