@@ -431,6 +431,7 @@ footer a {
         margin: 20px;
         font-size: 20px;
         padding: 0 30px 0 30px;
+        line-height: 45px;
     }
     .resume-button {
         margin: 10px;
@@ -447,6 +448,9 @@ footer a {
         font-size: 20px;
         font-weight: 700;
         line-height: 30px;
+        background-color: #8F2D56;
+        color: white;
+        text-align: center;
     }
     
     footer {
